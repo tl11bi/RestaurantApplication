@@ -20,7 +20,7 @@
             <artifactId>ojdbc7</artifactId>
             <version>12.1.0.2</version>
             <scope>system</scope>
-            <systemPath>D:/DatabaseConnection/ojdbc7-12.1.0.2.jar</systemPath> <!-- must match file name -->
+            <systemPath>C:/Users/Conno/Documents/GitHub/RestaurantApplication/ojdbc7-12.1.0.2.jar</systemPath> <!-- must match file name -->
         </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
