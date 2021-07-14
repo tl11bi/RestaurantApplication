@@ -1,9 +1,7 @@
-package Restaurant;
+package com.connorli.restaurant.domain;
 
-import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -32,7 +30,6 @@ public class Restaurant {
     }
 
 
-    private String restaurantName;
 
 
     public void addEmployee(String firstName, String lastName, EmployeeType employeeType) {
@@ -102,16 +99,7 @@ public class Restaurant {
 
 
     private static Restaurant instance;
-
-
-
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
-    }
-
-    public String getRestaurantName() {
-        return restaurantName;
-    }
+    
 
     public List<RestTable> getFreeTables() {
         return restTableList.stream().filter(restTable -> restTable.isOccupied() == false).collect(Collectors.toList());

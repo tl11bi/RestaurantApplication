@@ -1,4 +1,4 @@
-package Restaurant;
+package com.connorli.restaurant.domain;
 
 import javax.persistence.*;
 import java.util.ArrayList;

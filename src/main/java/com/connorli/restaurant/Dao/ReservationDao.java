@@ -1,10 +1,8 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
-import Restaurant.*;
-import Restaurant.Reservation;
+import com.connorli.restaurant.domain.Reservation;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
 

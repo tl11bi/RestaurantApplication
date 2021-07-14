@@ -1,4 +1,4 @@
-package Restaurant;
+package com.connorli.restaurant.domain;
 
 import javax.persistence.*;
 import javax.persistence.Table;
@@ -12,11 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @NamedQueries({
         @NamedQuery(name = "REST_MENU_ITEM.findAll", query = "SELECT mt FROM REST_MENU_ITEM mt")

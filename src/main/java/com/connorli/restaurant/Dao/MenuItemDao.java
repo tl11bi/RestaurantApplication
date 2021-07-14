@@ -1,8 +1,6 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
-import Restaurant.MenuItem;
-import Restaurant.MenuItem;
-import Restaurant.Order;
+import com.connorli.restaurant.domain.MenuItem;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

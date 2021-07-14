@@ -1,20 +1,14 @@
-package RestaurantDatabaseTesting;
+package com.connorli.restaurant.databaseTesting;
 
-import Restaurant.Reservation;
-import Restaurant.RestTable;
+import com.connorli.restaurant.domain.Reservation;
+import com.connorli.restaurant.domain.RestTable;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ReservationTest {
     static EntityManager em;

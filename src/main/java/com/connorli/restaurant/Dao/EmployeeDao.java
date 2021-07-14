@@ -1,10 +1,10 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
-import Restaurant.*;
+import com.connorli.restaurant.domain.Employee;
+import com.connorli.restaurant.domain.EmployeeType;
 
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
 

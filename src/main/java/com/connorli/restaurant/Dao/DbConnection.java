@@ -1,4 +1,4 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

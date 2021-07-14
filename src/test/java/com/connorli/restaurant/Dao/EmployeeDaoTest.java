@@ -1,11 +1,13 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
-import Restaurant.*;
+import RestaurantApplication.domain.*;
+import com.connorli.restaurant.domain.Employee;
+import com.connorli.restaurant.domain.EmployeeType;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Statement;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -30,10 +32,10 @@ class EmployeeDaoTest {
         Employee e2 = new Employee("Admin", "One", EmployeeType.Manager);
         Employee e3 = new Employee("Server", "One", EmployeeType.Server);
         Employee e4 = new Employee("Server", "Two", EmployeeType.Server);
-        assertDoesNotThrow(()->eDao.create(e1));
-        assertDoesNotThrow(()->eDao.create(e2));
-        assertDoesNotThrow(()->eDao.create(e3));
-        assertDoesNotThrow(()->eDao.create(e4));
+        Assertions.assertDoesNotThrow(() -> eDao.create(e1));
+        Assertions.assertDoesNotThrow(() -> eDao.create(e2));
+        Assertions.assertDoesNotThrow(() -> eDao.create(e3));
+        Assertions.assertDoesNotThrow(() -> eDao.create(e4));
 
     }
 
@@ -51,7 +53,7 @@ class EmployeeDaoTest {
         eDao.create(e1);
         e1.setFirstName("New");
         e1.setLastName("Last Name");
-        assertDoesNotThrow(()->eDao.update(e1));
+        assertDoesNotThrow(() -> eDao.update(e1));
     }
 
     @Test
@@ -64,7 +66,7 @@ class EmployeeDaoTest {
 
     @Test
     void test_EmployeeDao_getEmployees() {
-        assertDoesNotThrow(()->eDao.getEmployees());
+        Assertions.assertDoesNotThrow(() -> eDao.getEmployees());
         System.out.println(eDao.getEmployees());
 
     }

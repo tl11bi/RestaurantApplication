@@ -1,8 +1,8 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
-import Restaurant.Employee;
-import Restaurant.Reservation;
-import Restaurant.RestTable;
+import com.connorli.restaurant.domain.Reservation;
+import com.connorli.restaurant.domain.RestTable;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Timestamp;
@@ -60,9 +60,9 @@ class ReservationDaoTest {
         assertDoesNotThrow(()->rDao.update(reservation1));
         assertDoesNotThrow(()->rDao.update(reservation2));
         assertDoesNotThrow(()->rDao.update(reservation3));
-        assertEquals(rDao.findById(reservation1.getReservationID()), reservation1);
-        assertEquals(rDao.findById(reservation2.getReservationID()), reservation2);
-        assertEquals(rDao.findById(reservation3.getReservationID()), reservation3);
+        Assertions.assertEquals(rDao.findById(reservation1.getReservationID()), reservation1);
+        Assertions.assertEquals(rDao.findById(reservation2.getReservationID()), reservation2);
+        Assertions.assertEquals(rDao.findById(reservation3.getReservationID()), reservation3);
         printReservations();
         rDao.remove(reservation1.getReservationID());
         rDao.remove(reservation2.getReservationID());

@@ -1,14 +1,12 @@
-package RestaurantDatabaseTesting;
+package com.connorli.restaurant.databaseTesting;
 
-import Restaurant.Employee;
-import Restaurant.EmployeeType;
-import Restaurant.Order;
-import Restaurant.RestTable;
+import com.connorli.restaurant.domain.Employee;
+import com.connorli.restaurant.domain.EmployeeType;
+import com.connorli.restaurant.domain.Order;
+import com.connorli.restaurant.domain.RestTable;
 
 import javax.persistence.*;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OrderTest {
 

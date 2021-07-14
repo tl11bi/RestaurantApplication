@@ -1,17 +1,12 @@
-package RestaurantDatabaseTesting;
+package com.connorli.restaurant.databaseTesting;
 
-import Restaurant.Employee;
-import Restaurant.EmployeeType;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import com.connorli.restaurant.domain.Employee;
+import com.connorli.restaurant.domain.EmployeeType;
 
-import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.NamedQuery;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 

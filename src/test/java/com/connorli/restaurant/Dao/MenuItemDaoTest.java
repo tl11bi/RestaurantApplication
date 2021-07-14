@@ -1,6 +1,6 @@
-package Dao;
+package com.connorli.restaurant.Dao;
 
-import Restaurant.MenuItem;
+import com.connorli.restaurant.domain.MenuItem;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

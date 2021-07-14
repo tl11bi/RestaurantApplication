@@ -1,4 +1,4 @@
-package Restaurant;
+package com.connorli.restaurant.domain;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -15,8 +15,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+
 @NamedQueries({
         @NamedQuery(name = "REST_ORDER.findAll", query = "SELECT o FROM REST_ORDER o")
 })
